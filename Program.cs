@@ -66,6 +66,7 @@ namespace c_sharp
                 {
                     Console.WriteLine("You successfully bougth the item " + item.id + " called: '" + item.name + "'");
                     item.amount -=1 ;
+                    Program.users[item.user_id].balance =+ item.price;
                 }
             }else
             {
